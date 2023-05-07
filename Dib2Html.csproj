@@ -16,6 +16,8 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dib2html</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,5 +27,10 @@
     <PackageReference Include="Microsoft.DotNet.Interactive.Mermaid" Version="1.0.0-beta.23205.1" />
     <PackageReference Include="Microsoft.DotNet.Interactive.PowerShell" Version="1.0.0-beta.23205.1" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>
